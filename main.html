@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>osu! standard</title>
+    <link rel="stylesheet" href="/WebSys/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="nav-bar">
+                <li><img src="./images/logo.png" alt="Logo" id="header-logo"></li>
+                <li class="nav-items" id="mode"><a href="main.html">standard</a></li>
+                <li class="nav-items"><a href="mania.html">mania</a></li>
+                <li class="nav-items"><a href="taiko.html">taiko</a></li>
+                <li class="nav-items"><a href="catch.html">catch</a></li>
+            </ul>
+        </nav>
+        <div class="main-page-header">
+            <img src="/WebSys/home.svg" alt="home" class="home-logo">
+            <p class="main-page-header-text">my interest</p>
+        </div>
+    </header>
+    <main class="main-page">
+        <div class="main-page-subheader">
+            <p>osu!standard</p>
+        </div>
+        <section class="main-osu-page">
+            <nav>
+                <ul>
+                    <li><a href="#home" data-offset="41.5">Home</a></li>
+                    <li><a href="#info" data-offset="41.5">Info</a></li>
+                    <li><a href="#gameplay" data-offset="41.5">Gameplay</a></li>
+                </ul>
+            </nav>
+            <article id="home">
+                <h1 class="article-header">home</h1>
+                <div id="home-details">
+                    <p id="home-content">&nbsp;&nbsp;&nbsp;&nbsp;<b>osu!</b> is a free-to-play rhythm game originally created and self-published by Australian developer Dean Herbert. It was released for Microsoft Windows on 16 September 2007, with later ports to macOS, Linux, Android and iOS. <br><br>&nbsp;&nbsp;&nbsp;&nbsp;The gameplay, based on the Osu! Tatakae! Ouendan series of rhythm games, primarily involves clicking notes, which appear as circles, using the mouse cursor. Since the game's release, three other game modes have been added, taking inspiration from Taiko no Tatsujin and Beatmania. Unlike many rhythm games, levels in Osu! are created and uploaded by users, increasing the range and volume of the song library, which is a factor contributing to the game's popularity.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;The game has a significant connection to Japanese culture and anime music. It has also had effects on the esports industry—professional gamers use Osu! to warm up and practice, and the community frequently organizes tournaments between players.</p>
+                    <div id="home-links">
+                        <a href="https://osu.ppy.sh/" target="_blank">
+                            <img src="./images/osu-icon.png" id="home-osu-icon">
+                        </a>
+                        <table id="home-table">
+                            <tr>
+                                <td class="home-table-column-one">Original Author</td>
+                                <td>&nbsp;&nbsp;Dean "peppy" Herbert</td>
+                            </tr>
+                            <tr>
+                                <td class="home-table-column-one">Developer(s)</td>
+                                <td>&nbsp;&nbsp;osu! development team</td>
+                            </tr>
+                            <tr>
+                                <td class="home-table-column-one">Type</td>
+                                <td>&nbsp;&nbsp;Rhythm Game</td>
+                            </tr>
+                            <tr>
+                                <td class="home-table-column-one">Initial Release</td>
+                                <td>&nbsp;&nbsp;September 16, 2007</td>
+                            </tr>
+                            <tr>
+                                <td class="home-table-column-one">Written in</td>
+                                <td>&nbsp;&nbsp;C#</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <br>
+            </article>
+            <article id="info">
+                <h1 class="article-header">info</h1>
+                <p id="info-content">&nbsp;&nbsp;&nbsp;&nbsp;<b>osu!standard</b> The first game mode, with gameplay based on the ouendan series. osu! is the default mode, where players are expected to tap circles, hold sliders, and spin spinners to the beat of the music. It is based on the original iNiS' rhythm game Osu! Tatakae! Ouendan. osu! has its own mascot called pippi, a pink/black-haired girl.</p>
+                <br>
+                <div id="info-map">
+                    <p style="font-size: 0.9rem; padding-bottom: 15px; font-family: Torus-Light;">Clickable Image</p>
+                    <img src="./images/osu-gameplay.jpg" usemap="#image-map" alt="Map Image" id="info-image">
+                    <map name="image-map">
+                        <area target="" alt="Health Bar" title="Health Bar" href="javascript:void(0)" data-target="info" coords="1,1,490,29" shape="rect" onclick="updateInfoDisplay('Health Bar')">
+                        <area target="" alt="Cursor" title="Cursor" href="javascript:void(0)" data-target="info" coords="735,327,762,357" shape="rect" onclick="updateInfoDisplay('Cursor')">
+                        <area target="" alt="Score" title="Score" href="javascript:void(0)" data-target="info" coords="785,1,1111,31" shape="rect" onclick="updateInfoDisplay('Score')">
+                        <area target="" alt="Accuracy" title="Accuracy" href="javascript:void(0)" data-target="info" coords="868,32,1111,54" shape="rect" onclick="updateInfoDisplay('Accuracy')">
+                        <area target="" alt="Timer" title="Timer" href="javascript:void(0)" data-target="info" coords="830,32,864,54" shape="rect" onclick="updateInfoDisplay('Timer')">
+                        <area target="" alt="Hit Judgement" title="Hit Judgement" href="javascript:void(0)" data-target="info" coords="436,409,501,448" shape="rect" onclick="updateInfoDisplay('Hit Judgement')">
+                        <area target="" alt="Hit Judgement" title="Hit Judgement" href="javascript:void(0)" data-target="info" coords="666,409,708,449" shape="rect" onclick="updateInfoDisplay('Hit Judgement')">
+                        <area target="" alt="Slider" title="Slider" href="javascript:void(0)" data-target="info" coords="530,70,640,200" shape="rect" onclick="updateInfoDisplay('Slider')">
+                        <area target="" alt="Slider" title="Slider" href="javascript:void(0)" data-target="info" coords="487,358,714,482" shape="rect" onclick="updateInfoDisplay('Slider')">
+                        <area target="" alt="Hit Circle" title="Hit Circle" href="javascript:void(0)" data-target="info" coords="681,165,759,251" shape="rect" onclick="updateInfoDisplay('Hit Circle')">
+                        <area target="" alt="Hit Circle" title="Hit Circle" href="javascript:void(0)" data-target="info" coords="691,284,779,357" shape="rect" onclick="updateInfoDisplay('Hit Circle')">
+                        <area target="" alt="Mouse/Keyboard Buttons" title="Mouse/Keyboard Buttons" href="javascript:void(0)" data-target="info" coords="928,229,958,361" shape="rect" onclick="updateInfoDisplay('Mouse/Keyboard Buttons')">
+                        <area target="" alt="Combo" title="Combo" href="javascript:void(0)" data-target="info" coords="1,491,96,537" shape="rect" onclick="updateInfoDisplay('Combo')">
+                        <area target="" alt="Unstable Rate" title="Unstable Rate" href="javascript:void(0)" data-target="info" coords="384,523,576,540" shape="rect" onclick="updateInfoDisplay('Unstable Rate')">
+                        <area target="" alt="osu! Playfield" title="osu! Playfield" href="javascript:void(0)" data-target="info" coords="0,0,960,540" shape="rect" onclick="updateInfoDisplay('osu! Playfield')">
+                    </map>
+                </div>
+                <br>
+                <div id="info-details">
+                    <b><p id="info-title">osu! Playfield</p></b><br>
+                    <p id="info-display">The gameplay area field of osu!standard. You can change the background dim in settings.</p>
+                </div>
+                <br>
+                <div id="info-source">
+                    <p>Source: <a href="https://osu.ppy.sh/wiki/en/Game_mode/osu!" target="_blank" style="color: #D9A6B9;">osu! wiki</a></p> 
+                </div>
+            </article>
+            <article id="gameplay">
+                <h1 class="article-header">gameplay</h1>
+                <div id="gameplay-video">
+                    <iframe width="880" height="495" src="https://www.youtube.com/embed/RTBcxlUdOHI" title="8.6⭐ katayoku no tori // FC 735pp" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <br>
+                <div id="info-source">
+                    <p>Source: <a href="https://youtu.be/RTBcxlUdOHI" target="_blank" style="color: #D9A6B9;">YouTube: Vaxei</a></p> 
+                </div>
+            </article>
+        </section>
+    </main>
+
+
+    <script src="/WebSys/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>osu! catch</title>
+    <link rel="stylesheet" href="/WebSys/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="nav-bar">
+                <li><img src="./images/logo.png" alt="Logo" id="header-logo"></li>
+                <li class="nav-items"><a href="main.html">standard</a></li>
+                <li class="nav-items"><a href="mania.html">mania</a></li>
+                <li class="nav-items"><a href="taiko.html">taiko</a></li>
+                <li class="nav-items" id="mode"><a href="catch.html">catch</a></li>
+            </ul>
+        </nav>
+        <div class="main-page-header">
+            <img src="/WebSys/home.svg" alt="home" class="home-logo">
+            <p class="main-page-header-text">my interest</p>
+        </div>
+    </header>
+    <main class="main-page">
+        <div class="main-page-subheader">
+            <p>osu!catch</p>
+        </div>
+        <section class="main-osu-page">
+            <nav>
+                <ul>
+                    <li><a href="#home" data-offset="41.5">Home</a></li>
+                    <li><a href="#info" data-offset="41.5">Info</a></li>
+                    <li><a href="#gameplay" data-offset="41.5">Gameplay</a></li>
+                </ul>
+            </nav>
+            <article id="home">
+                <h1 class="article-header">home</h1>
+                <div id="home-details">
+                    <p id="home-content">&nbsp;&nbsp;&nbsp;&nbsp;<b>osu!</b> is a free-to-play rhythm game originally created and self-published by Australian developer Dean Herbert. It was released for Microsoft Windows on 16 September 2007, with later ports to macOS, Linux, Android and iOS. <br><br>&nbsp;&nbsp;&nbsp;&nbsp;The gameplay, based on the Osu! Tatakae! Ouendan series of rhythm games, primarily involves clicking notes, which appear as circles, using the mouse cursor. Since the game's release, three other game modes have been added, taking inspiration from Taiko no Tatsujin and Beatmania. Unlike many rhythm games, levels in Osu! are created and uploaded by users, increasing the range and volume of the song library, which is a factor contributing to the game's popularity.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;The game has a significant connection to Japanese culture and anime music. It has also had effects on the esports industry—professional gamers use Osu! to warm up and practice, and the community frequently organizes tournaments between players.</p>
+                    <div id="home-links">
+                        <a href="https://osu.ppy.sh/" target="_blank">
+                            <img src="./images/osu-icon.png" id="home-osu-icon">
+                        </a>
+                        <table id="home-table">
+                            <tr>
+                                <td class="home-table-column-one">Original Author</td>
+                                <td>&nbsp;&nbsp;Dean "peppy" Herbert</td>
+                            </tr>
+                            <tr>
+                                <td class="home-table-column-one">Developer(s)</td>
+                                <td>&nbsp;&nbsp;osu! development team</td>
+                            </tr>
+                            <tr>
+                                <td class="home-table-column-one">Type</td>
+                                <td>&nbsp;&nbsp;Rhythm Game</td>
+                            </tr>
+                            <tr>
+                                <td class="home-table-column-one">Initial Release</td>
+                                <td>&nbsp;&nbsp;September 16, 2007</td>
+                            </tr>
+                            <tr>
+                                <td class="home-table-column-one">Written in</td>
+                                <td>&nbsp;&nbsp;C#</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <br>
+            </article>
+            <article id="info">
+                <h1 class="article-header">info</h1>
+                <p id="info-content">&nbsp;&nbsp;&nbsp;&nbsp;In <b>osu!catch</b>, fruits of differing varieties fall from the top of the screen, and the player must catch them to the beat. To this end they control a catcher with a plate atop their head for catching said fruits. This mode is loosely based on a minigame inside of a Beatmania simulator, which itself is believed to be based on the EZ2CATCH mode from the EZ2DJ series. osu!catch's mascot is Yuzu, a blue-haired boy.
+                </p>
+                <br>
+                <div id="info-map">
+                    <p style="font-size: 0.9rem; padding-bottom: 15px; font-family: Torus-Light;">Clickable Image</p>
+                    <img src="./images/osu-catch-gameplay.jpg" usemap="#image-map" alt="Map Image" id="info-image">
+                    <map name="image-map">
+                        <area target="" alt="Health Bar" title="Health Bar" href="javascript:void(0)" data-target="info" coords="1,1,490,29" shape="rect" onclick="updateInfoDisplay('Health Bar')">
+                        <area target="" alt="Score" title="Score" href="javascript:void(0)" data-target="info" coords="785,1,1111,31" shape="rect" onclick="updateInfoDisplay('Score')">
+                        <area target="" alt="Accuracy" title="Accuracy" href="javascript:void(0)" data-target="info" coords="868,32,1111,54" shape="rect" onclick="updateInfoDisplay('Accuracy')">
+                        <area target="" alt="Timer" title="Timer" href="javascript:void(0)" data-target="info" coords="830,32,864,54" shape="rect" onclick="updateInfoDisplay('Timer')">
+                        <area target="" alt="Mouse/Keyboard Buttons" title="Mouse/Keyboard Buttons" href="javascript:void(0)" data-target="info" coords="928,229,958,361" shape="rect" onclick="updateInfoDisplay('Mouse/Keyboard Buttons')">
+                        <area target="" alt="Combo" title="Combo" href="javascript:void(0)" data-target="info" coords="475,239,616,301" shape="rect" onclick="updateInfoDisplay('Combo')">
+                        <area target="" alt="Unstable Rate" title="Unstable Rate" href="javascript:void(0)" data-target="info" coords="318,527,640,540" shape="rect" onclick="updateInfoDisplay('Unstable Rate ')">
+                        <area target="" alt="Plate" title="Plate" href="javascript:void(0)" data-target="info" coords="479,463,616,540" shape="rect" onclick="updateInfoDisplay('Plate')">
+                        <area target="" alt="Fruits" title="Fruits" href="javascript:void(0)" data-target="info" coords="462,0,500,31" shape="rect" onclick="updateInfoDisplay('Fruits')">
+                        <area target="" alt="Fruits" title="Fruits" href="javascript:void(0)" data-target="info" coords="591,83,651,147" shape="rect" onclick="updateInfoDisplay('Fruits')">
+                        <area target="" alt="Fruits" title="Fruits" href="javascript:void(0)" data-target="info" coords="383,189,450,253" shape="rect" onclick="updateInfoDisplay('Fruits')">
+                        <area target="" alt="Fruits" title="Fruits" href="javascript:void(0)" data-target="info" coords="298,297,369,362" shape="rect" onclick="updateInfoDisplay('Fruits')">
+                        <area target="" alt="Fruits" title="Fruits" href="javascript:void(0)" data-target="info" coords="501,408,570,470" shape="rect" onclick="updateInfoDisplay('Fruits')">
+                        <area target="" alt="osu! Playfield" title="osu! Playfield" href="javascript:void(0)" data-target="info" coords="0,0,960,540" shape="rect" onclick="updateInfoDisplay('osu! Playfield')">
+                    </map>
+                </div>
+                <br>
+                <div id="info-details">
+                    <b><p id="info-title">osu! Playfield</p></b><br>
+                    <p id="info-display">The gameplay area field of osu!mania.</p>
+                </div>
+                <br>
+                <div id="info-source">
+                    <p>Source: <a href="https://osu.ppy.sh/wiki/en/Game_mode/osu%21mania" target="_blank" style="color: #D9A6B9;">osu! wiki</a></p> 
+                </div>
+            </article>
+            <article id="gameplay">
+                <h1 class="article-header">gameplay</h1>
+                <div id="gameplay-video">
+                    <iframe width="880" height="495" src="https://www.youtube.com/embed/SKUwguQQz2E" title="osu!catch | Karym | Chroma - I [AI] 99.93% FC #1 1331pp" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <br>
+                <div id="info-source">
+                    <p>Source: <a href="https://youtu.be/SKUwguQQz2E" target="_blank" style="color: #D9A6B9;">YouTube: CatchTheBeat!</a></p> 
+                </div>
+            </article>
+        </section>
+    </main>
+
+
+    <script src="/WebSys/script.js"></script>
+</body>
+</html>
